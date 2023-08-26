@@ -14,14 +14,93 @@
     <div class="d-flex">
 
     <div class="col-md-6 bg-info">
-     <img src="./img/maindice.png" alt="" class="dice_roller">
-     <button type="button" class="dice_roller">Roll Dice</button>
+     <img src="./img/maindice.png" alt="" class="dice_roller " id="roll_1">
+     <button type="button" class="dice_roller dice_roller_btn" onclick="diceroller()" >Roll Dice</button>
     </div>
     <div class="col-md-6 bg-danger">
-    <img src="./img/maindice.png" alt="" class="dice_roller">
-    <button type="button" class="dice_roller">Roll Dice</button>
+    <img src="./img/maindice.png" alt="" class="dice_roller" id="roll_2">
+    <button type="button" class="dice_roller dice_roller_btn" onclick="diceroller2()">Roll Dice</button>
     </div>
     </div>
+    <div class="bg-warning both_div">
+
+         <button type="button" class="roll_both_dice mt-5 both_dice_btn " onclick="both_roll()">Roll Both Dice</button>
+    </div>
+
+    <script>
+        
+            
+        function diceroller(){
+            const diceBtn_one=document.getElementById('roll_1');
+           const min=1;
+           const max=7;
+           const randomNumber=Math.floor(Math.random() * (max-min)) + min ;
+        //    randamNumber.innerText = 
+        // console.log(randamNumber);
+        switch (randomNumber){
+            case 1 :
+            diceBtn_one.src="./img/three.png" ;
+            break ;
+            case 2 :
+            diceBtn_one.src="./img/two.png" ;
+            break ;
+            case 3 :
+            diceBtn_one.src="./img/one.png" ;
+            break ;
+            case 4 :
+            diceBtn_one.src="./img/dice.png" ;
+            break ;
+            case 5 :
+            diceBtn_one.src="./img/five.png" ;
+            break ;
+            case 6 :
+            diceBtn_ones.src="./img/sixwhite.png" ;
+            break ;
+
+        }
+        
+        }
+        
+            
+        function diceroller2(){
+            const diceBtn_two=document.getElementById('roll_2');
+           const min=1;
+           const max=7;
+           const randomNumber=Math.floor(Math.random() * (max-min)) + min ;
+        //    randamNumber.innerText = 
+        // console.log(randamNumber);
+        switch (randomNumber){
+            case 1 :
+            diceBtn_two.src="./img/three.png" ;
+            break ;
+            case 2 :
+            diceBtn_two.src="./img/two.png" ;
+            break ;
+            case 3 :
+            diceBtn_two.src="./img/one.png" ;
+            break ;
+            case 4 :
+            diceBtn_two.src="./img/dice.png" ;
+            break ;
+            case 5 :
+            diceBtn_two.src="./img/five.png" ;
+            break ;
+            case 6 :
+            diceBtn_two.src="./img/sixwhite.png" ;
+            break ;
+
+        }
+    }
+    function both_roll(){
+       const bothDice1=document.getElementById("roll_1");
+       const bothDice2=document.getElementById("roll_2");
+       bothDice1.src="./img/maindice.png";
+       bothDice1.className=('img-size dice_roller')
+       bothDice2.src="./img/maindice.png";
+       bothDice2.className=('img-size dice_roller')
+    }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
