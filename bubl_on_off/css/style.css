@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+}
+
+.main-screen {
+    background-color: rgb(171, 171, 171);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 550px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.anime-cont {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+.bulb-anime {
+    height: 50px;
+    width: 50px;
+    rotate: 90deg;
+    background-image: url(./../img/normal.png);
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s;
+}
+
+.bulb-anime2 {
+    height: 50px;
+    width: 50px;
+    rotate: -90deg;
+    background-image: url(./../img/normal.png);
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s;
+}
+
+.anime1 {
+    animation: blink1 2s linear infinite;
+}
+
+.anime2 {
+    animation: blink1 0.9s linear infinite;
+
+}
+
+.anime3 {
+    animation: blink1 2s linear infinite;
+
+}
+
+.anime4 {
+    animation: blink1 0.9s linear infinite;
+
+}
+
+.anime5 {
+    animation: blink1 2s linear infinite;
+
+}
+
+.anime6 {
+    animation: blink1 0.9s linear infinite;
+
+}
+
+.anime7 {
+    animation: blink1 2s linear infinite;
+
+}
+
+.anime8 {
+    animation: blink1 0.9s linear infinite;
+
+}
+
+.anime9 {
+    animation: blink1 2s linear infinite;
+
+}
+
+.anime10 {
+    animation: blink1 2s linear infinite;
+
+}
+
+.anime11 {
+    animation: blink1 0.9s linear infinite;
+
+}
+
+.anime-cont {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.anime-cont2 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.bulb-container {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.bulb-container h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bulbimg {
+    height: 100px;
+    width: 100px;
+}
+
+.normal-bulb {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-prime {
+    border: 1px solid rgb(200, 198, 198);
+    border-radius: 5px;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+
+}
+
+@keyframes blink1 {
+    0% {
+        background-image: url(./../img/normal.png);
+    }
+
+    14.28% {
+        background-image: url(./../img/cyane.png);
+    }
+    28.57% {
+        background-image: url(./../img/lightgreen.png);
+    }
+    42.85% {
+        background-image: url(./../img/orange.png);
+    }
+    57.14% {
+        background-image: url(./../img/pink.png);
+    }
+    71.42% {
+        background-image: url(./../img/yellow.png);
+
+    }
+    85.71% {
+        background-image: url(./../img/red.png);
+    }
+    100% {
+        background-image: url(./../img/normal.png);
+    }
+}
