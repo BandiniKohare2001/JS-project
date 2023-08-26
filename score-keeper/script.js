@@ -56,10 +56,10 @@ function decrementPak(){
 
 
 function resetScore(){
-    var homeScore = document.getElementById('indiaScore');
-    var awayScore = document.getElementById('pakScore');
-    var home = homeScore.innerHTML;
-    var away = awayScore.innerHTML;
+    let homeScore = document.getElementById('indiaScore');
+    let awayScore = document.getElementById('pakScore');
+let home = homeScore.innerHTML;
+    let away = awayScore.innerHTML;
 
     home = 0;
     away = 0;
@@ -71,12 +71,12 @@ function resetScore(){
 
 
 function getScore(){
-    var homeScore = document.getElementById('indiaScore');
-    var home = parseInt(homeScore.innerHTML);
-    var awayScore = document.getElementById("pakScore")
-    var away = parseInt(awayScore.innerHTML);
-    var homeName = document.getElementById('india-name').innerText;
-    var awayName = document.getElementById('pak-name').innerText;
+    let homeScore = document.getElementById('indiaScore');
+    let home = parseInt(homeScore.innerHTML);
+    let awayScore = document.getElementById("pakScore")
+    let away = parseInt(awayScore.innerHTML);
+    let homeName = document.getElementById('india-name').innerText;
+    let awayName = document.getElementById('pak-name').innerText;
 
     localStorage.setItem("india_score", home);
     localStorage.setItem("pak_score", away);
@@ -87,11 +87,11 @@ function getScore(){
 
 
 function displayImage() {
-    var input = document.getElementById('uploadInput');
-    var image = document.getElementById('uploadedImage');
+    let input = document.getElementById('uploadInput');
+    let image = document.getElementById('uploadedImage');
   
-    var file = input.files[0];
-    var reader = new FileReader();
+    let file = input.files[0];
+    let reader = new FileReader();
   
     reader.onload = function(e) {
       image.src = e.target.result;
