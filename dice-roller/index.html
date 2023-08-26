@@ -10,19 +10,27 @@
 
 
 <body>
-    <h1 class="text-center">Dice Roller!</h1>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="../index.html">
+            <img src="../score-keeper/img/logo.png" alt="Logo" height="50px" class="d-inline-block align-text-top fs-2 ms-5">
+          </a>
+        <button type="button" class="btn btn-primary me-5"> Log In</button>
+        </div>
+      </nav>
+    <h1 class="text-center bg-dark heading">Dice Roller!</h1>
     <div class="d-flex">
 
-    <div class="col-md-6 bg-info">
+    <div class="col-md-6 bg-tertiry">
      <img src="./img/maindice.png" alt="" class="dice_roller " id="roll_1">
-     <button type="button" class="dice_roller dice_roller_btn" onclick="diceroller()" >Roll Dice</button>
+     <button type="button" class="dice_roller dice_roller_btn bg-warning" onclick="diceroller()" >Roll Dice</button>
     </div>
-    <div class="col-md-6 bg-danger">
+    <div class="col-md-6 bg-tertiry">
     <img src="./img/maindice.png" alt="" class="dice_roller" id="roll_2">
-    <button type="button" class="dice_roller dice_roller_btn" onclick="diceroller2()">Roll Dice</button>
+    <button type="button" class="dice_roller dice_roller_btn bg-warning" onclick="diceroller2()">Roll Dice</button>
     </div>
     </div>
-    <div class="bg-warning both_div">
+    <div class="bg-secondary1 both_div">
 
          <button type="button" class="roll_both_dice mt-5 both_dice_btn " onclick="both_roll()">Roll Both Dice</button>
     </div>
