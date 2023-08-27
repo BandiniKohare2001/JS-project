@@ -1,3 +1,8 @@
+
+.body-structure{
+margin-left: 100px;
+margin-right: 100px;
+}
 .sc-card{
     background-color: antiquewhite;
     padding: 8px;
@@ -5,4 +10,16 @@
 }
 .code-btn{
     width: 100px;
+}
+.logo-hea{
+    color: red;
+}
+.text-color{
+
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.heading{
+    text-align: center;
 }
