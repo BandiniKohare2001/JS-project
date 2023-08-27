@@ -1,3 +1,6 @@
+body{
+    font-family: "Montserrat";
+}
 .navbar {
     position: fixed;
     top: 0%;
@@ -35,4 +38,22 @@
 
 .heading {
     text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.join-div{
+    position: relative;
+    height: 408px;
+    display: flex;
+ 
+    background: linear-gradient(30deg, #69548e, #c9bfda);
+    margin-bottom: 100px;
+}
+.think-img{
+  left: 0%;
+}
+.heading-text-color{
+    color: white;
+    margin-top: 100px;
+font-weight: bold;
 }
