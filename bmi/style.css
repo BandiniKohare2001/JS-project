@@ -3,13 +3,13 @@ body {
     height: 100vh;
     padding: 0;
     border: 0;
-  
+
 }
 
 .form {
     background-color: white;
     height: 170px;
-padding-top: 20px;
+    padding-top: 20px;
     width: 350px;
     border-radius: 20px;
     margin: 20px auto 20px auto;
@@ -118,27 +118,27 @@ h3 b {
 }
 
 .bmi-value {
-    color: white;
+    color: rgb(3, 3, 3);
     font-size: 20px;
 
     padding-left: 30px;
 }
 
 .status {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     padding-left: 30px;
 }
 
 #bmi-output {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: bold;
     padding-left: 30px;
 }
 
 #bmi-status {
-    color: white;
+    color: rgb(2, 2, 2);
     font-size: 30px;
     font-weight: bold;
     padding-left: 30px;
